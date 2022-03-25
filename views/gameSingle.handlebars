@@ -1,0 +1,23 @@
+<main class="main switchGame-single container">
+    <div class="row d-flex">
+        <div class="col-md-8">
+    <figure class="text-center">
+        <img src="https://via.placeholder.com/450x500" alt="{{name}}" class="img-fluid home-img">
+        <figcaption class="figcap">{{name}}</figcaption>
+    </figure>
+        </div>
+        <div class="col-md-2">
+            <h4>Release Dates</h4>
+            <ul class="list-group">
+                {{#each @../releaseDates}}
+                    <li class="list-group-item">
+                        {{this}}
+                    </li>
+                {{/each}}
+            </ul>
+
+            <h4>Developers</h4>
+            <p>{{data.developers}}</p>
+        </div>
+    </div>
+</main>
